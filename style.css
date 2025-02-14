@@ -93,6 +93,14 @@ body{
     margin-top: 30px;
 }
 
+#submit-button:hover {
+    background-color: rgb(25, 25, 25);
+}
+
+#submit-button:active {
+    background-color: rgb(76, 76, 76);
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
