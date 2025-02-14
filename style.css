@@ -1,29 +1,86 @@
 /* Start coding here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --darkpurple:#5E44FF;
+    --lightpink:#E8DCF6;
+    --lightblue:#D7E5F6;
+    --lightindigo:#D8E0FC;
+    --myblack:#1A1A2C;
+    --gray:#5F5F76;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    width: 100%;
-    height: 100%; 
+    font-family: "Inter", serif;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 }
 
 .header{
     flex:1;
-
+    background-color: black;
 }
 
 .feature-section{
-    flex:1;
+    display: flex;
+    gap: 20px;
+    padding: 120px 120px 140px 120px;
+}
 
+.feature-section .card{
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    padding: 28px;
+}
+
+.feature-section .card-1{
+    background-color: var(--lightblue);
+}
+
+.feature-section .card-2{
+    background-color: var(--lightindigo);
+}
+
+.feature-section .card-3{
+    background-color: var(--lightpink);
+}
+
+.feature-section .card .icon{
+    color: var(--darkpurple);
+    background-color: white;
+    border-radius: 16px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.feature-section .card .icon .my-svg{
+    width: 28px;
+    height: 28px;
+}
+
+.feature-section .card h3{
+    color: var(--myblack);
+    margin-top: 20px;
+}
+
+.feature-section .card p{
+    color: var(--gray);
+    margin-top: 20px;
 }
 
 .contact-section{
     flex:1;
-
+    background-color: black;
 }
